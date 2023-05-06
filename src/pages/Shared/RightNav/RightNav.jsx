@@ -3,7 +3,6 @@ import { Button, ListGroup } from 'react-bootstrap';
 import { FaBeer, FaFacebook, FaGithub, FaGoogle, FaInstagram, FaTwitter } from 'react-icons/fa';
 import QZone from '../QZone/QZone';
 import bg from '../../../assets/bg.png'
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 const RightNav = () => {
     return (
@@ -20,9 +19,14 @@ const RightNav = () => {
                 </ListGroup>
             </div>
             <QZone />
-            <div className='relative'>
-                <img src={bg} alt="" />
-                <div className='absolute'>
+            <div style={{
+                width: "225px",
+                height: "280px",
+                backgroundImage: `url(${bg})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"
+            }}>
+                <div className='text-white text-center '>
                     <h3>Create an Amazing Newspaper</h3>
                     <p>Discover thousands of options, easy to customize layouts, one-click to import demo and much more.</p>
                     <Button variant="danger">Learn More</Button>

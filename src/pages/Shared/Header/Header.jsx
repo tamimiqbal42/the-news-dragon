@@ -20,7 +20,7 @@ const Header = () => {
             </div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand href="#home"><span className='w-50'><img src={logo} alt="" /></span></Navbar.Brand>
+                    <Navbar.Brand href="#home"><img className='w-50' src={logo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
@@ -28,7 +28,7 @@ const Header = () => {
                             <Nav.Link href="#pricing">About</Nav.Link>
                             <Nav.Link href="#pricing">Carrier</Nav.Link>
                         </Nav>
-                        <Nav>
+                        <Nav className='d-flex align-items-center'>
                             <Nav.Link href="#deets">Profile</Nav.Link>
                             <Nav.Link eventKey={2} href="#memes">
                                 <Button variant="secondary">Login</Button>
